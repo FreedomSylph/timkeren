@@ -39,10 +39,13 @@ public class ChickenTerror : MonoBehaviour {
 	public float slowandpoisonDelay;
 	public int poison;
 	Vector3 temp2;
-	
+
+	int chickenMovement;
+
 	void Start()
 	{
-
+		//set the chicken movement
+		chickenMovement = 1;
 		//To mark the arrow not visible before launch
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		spriteRenderer.enabled = false;
@@ -73,8 +76,8 @@ public class ChickenTerror : MonoBehaviour {
 		//Set the object rotation
 		if (groundClicked)
 		{
-			Quaternion direction = Quaternion.LookRotation(ground - this.transform.position, this.transform.TransformDirection(Vector3.up));
-			this.transform.rotation = new Quaternion(0, 0, direction.z, direction.w);
+			//Quaternion direction = Quaternion.LookRotation(ground - this.transform.position, this.transform.TransformDirection(Vector3.up));
+			//this.transform.rotation = new Quaternion(0, 0, direction.z, direction.w);
 		}
 		
 		//move projectile towards target
@@ -83,7 +86,6 @@ public class ChickenTerror : MonoBehaviour {
 			transform.position = Vector2.MoveTowards(transform.position, ground, Time.deltaTime * speed);
 			if(Vector2.MoveTowards(transform.position, ground, Time.deltaTime * speed)==new Vector2(transform.position.x,transform.position.y))
 			{
-				
 				reachGround = true;
 			}
 			
@@ -92,11 +94,23 @@ public class ChickenTerror : MonoBehaviour {
 		// hit the ground
 		if (transform.position.x == ground.x && transform.position.y == ground.y) {
 			reachGround = true;
+
+			
 		}
 		
 		// hit the ground and found enemy
 		if(isFindingTarget && reachGround)
 		{
+			//to make sure that the chicken-land animation is triggered
+			if(!this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Chicken-Land"))
+			{				
+				this.GetComponent<Animator>().SetTrigger("Landed");
+				//this.GetComponent<Animator>().Play("Chicken-Land");
+			}
+
+			//to move the chicken to the left
+			transform.localPosition = new Vector3(transform.localPosition.x+((chickenMovement*1)*Time.deltaTime),transform.localPosition.y,transform.localPosition.z);
+
 			GameObject[] temp = GameObject.FindGameObjectsWithTag ("Enemy");
 			enemyInstance = new Enemy[temp.Length];
 			for (int idx= 0; idx <temp.Length; idx++) 
@@ -199,7 +213,7 @@ public class ChickenTerror : MonoBehaviour {
 		//instantiate the explosion
 		GameObject temp = (GameObject) Instantiate (chickenProjectile, temp2, transform.rotation);
 		//do the animation
-		temp.GetComponent<Animator>().Play("FadeIn");
+		temp.GetComponent<Animator>().Play("ChickenTerror");
 
 		//return the flip from right to left
 		for (int idx= 0; idx <enemyInstance.Length; idx++) 
@@ -213,6 +227,15 @@ public class ChickenTerror : MonoBehaviour {
 		//start explosion animation
 		//temp.GetComponent<Animator> ().Play ("FadeIn");
 		
+	}
+	
+	/// <summary>
+	/// Flips the chicken at the chicken-land animation
+	/// </summary>
+	public void flipChicken()
+	{
+		chickenMovement = chickenMovement * -1;
+		transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
 	}
 	
 	private void disableProjectileVisulization()

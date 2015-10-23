@@ -42,7 +42,7 @@ public class Hero : MonoBehaviour
     {
         ProjectilePosTr = transform.GetChild(0);
         anim = GetComponent<Animator>();
-		if(name=="Sniper")
+		if(name=="Sniper" || name=="Rogue")
 		{
 			//set the degree of the hero
 			anim.SetInteger("degreeToTarget",331);

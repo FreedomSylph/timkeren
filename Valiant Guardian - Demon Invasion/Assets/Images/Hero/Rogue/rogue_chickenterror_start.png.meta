@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 79227483ace332a409f7d7c6687fae0b
-timeCreated: 1445582668
+guid: 36f5ab248df8e1442bd16bb099ee09fd
+timeCreated: 1445590787
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: rogue_idle_0
-    21300002: rogue_idle_1
-    21300004: rogue_idle_2
-    21300006: rogue_idle_3
-    21300008: rogue_idle_4
-    21300010: rogue_idle_5
-    21300012: rogue_idle_6
-    21300014: rogue_idle_7
-    21300016: rogue_idle_8
-    21300018: rogue_idle_9
-    21300020: rogue_idle_10
-    21300022: rogue_idle_11
+    21300000: rogue_chickenterror_start_0
+    21300002: rogue_chickenterror_start_1
+    21300004: rogue_chickenterror_start_2
+    21300006: rogue_chickenterror_start_3
+    21300008: rogue_chickenterror_start_4
+    21300010: rogue_chickenterror_start_5
+    21300012: rogue_chickenterror_start_6
+    21300014: rogue_chickenterror_start_7
+    21300016: rogue_chickenterror_start_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -61,123 +58,93 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: rogue_idle_0
+    - name: rogue_chickenterror_start_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 104
-        width: 48
-        height: 99
+        x: 43
+        y: 147
+        width: 53
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_1
+    - name: rogue_chickenterror_start_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 104
-        width: 48
-        height: 99
+        x: 191
+        y: 147
+        width: 59
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_2
+    - name: rogue_chickenterror_start_2
       rect:
         serializedVersion: 2
-        x: 105
-        y: 104
-        width: 48
-        height: 100
+        x: 312
+        y: 147
+        width: 89
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_3
+    - name: rogue_chickenterror_start_3
       rect:
         serializedVersion: 2
-        x: 157
-        y: 104
-        width: 48
-        height: 101
+        x: 449
+        y: 147
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_4
+    - name: rogue_chickenterror_start_4
       rect:
         serializedVersion: 2
-        x: 209
-        y: 104
-        width: 48
-        height: 101
+        x: 597
+        y: 147
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_5
+    - name: rogue_chickenterror_start_5
       rect:
         serializedVersion: 2
-        x: 261
-        y: 104
-        width: 49
-        height: 102
+        x: 5
+        y: 5
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_6
+    - name: rogue_chickenterror_start_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 49
-        height: 102
+        x: 153
+        y: 5
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_7
+    - name: rogue_chickenterror_start_7
       rect:
         serializedVersion: 2
-        x: 55
-        y: 1
-        width: 49
-        height: 98
+        x: 301
+        y: 5
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_8
+    - name: rogue_chickenterror_start_8
       rect:
         serializedVersion: 2
-        x: 107
-        y: 1
-        width: 49
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_9
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 1
-        width: 49
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_10
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 1
-        width: 49
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rogue_idle_11
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 1
-        width: 48
-        height: 99
+        x: 449
+        y: 5
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

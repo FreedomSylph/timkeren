@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a8a4a9d717b33498acbd5908e5d1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Projectiles: {fileID: 165164, guid: 358277bd7dddb0542840e1bf0194ae10, type: 2}
+  Projectiles: {fileID: 149028, guid: b355fee1977e5c243b86e08cb4c03559, type: 2}
 --- !u!114 &11436514
 MonoBehaviour:
   m_ObjectHideFlags: 1
