@@ -226,14 +226,6 @@ Prefab:
       propertyPath: m_Name
       value: MainGUI
       objectReference: {fileID: 0}
-    - target: {fileID: 22403734, guid: 7ecb0753de93ee04dae5848547c6ed24, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22403734, guid: 7ecb0753de93ee04dae5848547c6ed24, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 22453560, guid: 7ecb0753de93ee04dae5848547c6ed24, type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -271,6 +263,14 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22495594, guid: 7ecb0753de93ee04dae5848547c6ed24, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403734, guid: 7ecb0753de93ee04dae5848547c6ed24, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403734, guid: 7ecb0753de93ee04dae5848547c6ed24, type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}

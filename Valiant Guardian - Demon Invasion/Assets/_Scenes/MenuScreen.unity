@@ -193,7 +193,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.5999999
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -373,43 +373,47 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440964, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22440964, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22406694, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22406694, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22406694, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22480920, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22480920, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22402016, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22402016, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22402016, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11443898, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}
+      propertyPath: m_Transition
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 069c60e985cb349448d6ebe50de7daad, type: 2}

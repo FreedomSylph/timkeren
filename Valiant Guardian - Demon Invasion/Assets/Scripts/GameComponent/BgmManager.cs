@@ -4,9 +4,11 @@ using System.Collections;
 public class BgmManager : MonoBehaviour {
 
     public static BgmManager instance = null;
+    private AudioSource bgmAudioSource;
 
     void Awake()
     {
+        //-------------Singleton method--------------------------//
         if (instance == null)
 
             //if not, set instance to this
@@ -24,5 +26,15 @@ public class BgmManager : MonoBehaviour {
 
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
+
+        //--------------Singleton finished-----------------------//
+
+        bgmAudioSource = this.gameObject.GetComponent<AudioSource>();
+    }
+
+    public float BgmVolume
+    {
+        get { return bgmAudioSource.volume; }
+        set { bgmAudioSource.volume = value; }
     }
 }

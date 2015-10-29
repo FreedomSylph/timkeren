@@ -4,7 +4,6 @@ using System.Collections;
 
 public class GameController : MonoBehaviour
 {
-
     private static GameController instance;
 
     public static GameController Instance
