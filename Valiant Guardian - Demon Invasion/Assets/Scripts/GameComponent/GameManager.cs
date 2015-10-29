@@ -30,20 +30,5 @@ public class GameManager : MonoBehaviour
 
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
-
-        //get the audio listener from the Main Camera
-        //audioListener = GameObject.FindObjectOfType<AudioListener>();
-    }
-
-    //to enable all sound by enabling audio listener
-    public void EnableAudioListener()
-    {
-        audioListener.enabled = true;
-    }
-
-    //to mute all sound by disabling audio listener
-    public void DisableAudioListener()
-    {
-        audioListener.enabled = false;
     }
 }

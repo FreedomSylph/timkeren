@@ -7,7 +7,6 @@ using System.Collections;
 public class OptionMenu : MonoBehaviour {
 
     private GameManager gameManager;
-    private CameraManager camManager;
     private BgmManager bgmManager;
 
     private GameObject optionBoard;
@@ -33,8 +32,10 @@ public class OptionMenu : MonoBehaviour {
         CloseOptionBoard();
 
         gameManager = ScriptableObject.FindObjectOfType<GameManager>();
-        camManager = ScriptableObject.FindObjectOfType<CameraManager>();
         bgmManager = ScriptableObject.FindObjectOfType<BgmManager>();
+
+        //to check the volume status when loading scene
+        bgmManager.VolumeCheckUpdate();
     }
 
     public void OpenOptionBoard()
@@ -52,15 +53,24 @@ public class OptionMenu : MonoBehaviour {
     {
         if(muteAllSoundsImage.sprite == muteAllSoundsSprite[0])
         {
+            //Chnage the button's sprite image
             muteAllSoundsImage.sprite = muteAllSoundsSprite[1];
-            //gameManager.Instance.DisableAudioListener();
-            camManager.DisableAudioListener();
+
+            //mute the bgm by BgmManager
+            bgmManager.Instance.MuteBgm();
+
+            //Make the slider uninteractable
+            bgmSlider.interactable = false;
+            sfxSlider.interactable = false;
         }
         else
         {
             muteAllSoundsImage.sprite = muteAllSoundsSprite[0];
-            //gameManager.Instance.EnableAudioListener();
-            camManager.EnableAudioListener();
+            bgmManager.Instance.UnmuteBgm();
+
+            //Make the slider uninteractable
+            bgmSlider.interactable = true;
+            sfxSlider.interactable = true;
         }
     }
 
