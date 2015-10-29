@@ -3,8 +3,13 @@ using System.Collections;
 
 public class BgmManager : MonoBehaviour {
 
-    public static BgmManager instance = null;
+    private static BgmManager instance = null;
     private AudioSource bgmAudioSource;
+
+    public BgmManager Instance
+    {
+        get { return instance; }
+    }
 
     void Awake()
     {

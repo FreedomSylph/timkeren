@@ -5,10 +5,18 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    private static AudioListener audioListener;
+    public AudioListener audioListener;
+
+    public GameManager Instance
+    {
+        get { return instance; }
+    }
 
     void Awake()
     {
+        //To make sure this gameobject doesn't move on reloading scene
+        this.transform.position = Vector3.zero;
+
         if (instance == null)
 
             //if not, set instance to this
@@ -22,25 +30,20 @@ public class GameManager : MonoBehaviour
 
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
+
+        //get the audio listener from the Main Camera
+        //audioListener = GameObject.FindObjectOfType<AudioListener>();
     }
 
     //to enable all sound by enabling audio listener
-    public static void EnableAudioListener()
+    public void EnableAudioListener()
     {
-        if (audioListener == null)
-        {
-            audioListener = GameObject.Find("Main Camera").GetComponent<AudioListener>();
-        }
         audioListener.enabled = true;
     }
 
     //to mute all sound by disabling audio listener
-    public static void DisableAudioListener()
+    public void DisableAudioListener()
     {
-        if (audioListener == null)
-        {
-            audioListener = GameObject.Find("Main Camera").GetComponent<AudioListener>();
-        }
         audioListener.enabled = false;
     }
 }

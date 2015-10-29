@@ -6,6 +6,8 @@ using System.Collections;
 
 public class OptionMenu : MonoBehaviour {
 
+    private GameManager gameManager;
+    private CameraManager camManager;
     private BgmManager bgmManager;
 
     private GameObject optionBoard;
@@ -29,6 +31,9 @@ public class OptionMenu : MonoBehaviour {
     void Start()
     {
         CloseOptionBoard();
+
+        gameManager = ScriptableObject.FindObjectOfType<GameManager>();
+        camManager = ScriptableObject.FindObjectOfType<CameraManager>();
         bgmManager = ScriptableObject.FindObjectOfType<BgmManager>();
     }
 
@@ -42,17 +47,20 @@ public class OptionMenu : MonoBehaviour {
         optionBoard.SetActive(false);
     }
 
+    //called from mute button
     public void ToogleMuteAllSoundsBtn()
     {
         if(muteAllSoundsImage.sprite == muteAllSoundsSprite[0])
         {
             muteAllSoundsImage.sprite = muteAllSoundsSprite[1];
-            GameManager.DisableAudioListener();
+            //gameManager.Instance.DisableAudioListener();
+            camManager.DisableAudioListener();
         }
         else
         {
             muteAllSoundsImage.sprite = muteAllSoundsSprite[0];
-            GameManager.EnableAudioListener();
+            //gameManager.Instance.EnableAudioListener();
+            camManager.EnableAudioListener();
         }
     }
 
@@ -60,7 +68,7 @@ public class OptionMenu : MonoBehaviour {
     public void UpdateBgmVolume()
     {
         float bgmVolume = bgmSlider.value;
-        bgmManager.BgmVolume = bgmVolume;
+        bgmManager.Instance.BgmVolume = bgmVolume;
     }
 
     //this method called from SfxSlider when it changed
