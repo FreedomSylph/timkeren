@@ -38,6 +38,8 @@ public class Hero : MonoBehaviour
     public int idleStateHash;
     public string heroIdleAnimName;
 
+	public int degreeToTarget;
+
     void Start()
     {
         ProjectilePosTr = transform.GetChild(0);
@@ -96,6 +98,7 @@ public class Hero : MonoBehaviour
             ProjectilePosTr.rotation = new Quaternion(0, 0, direction.z, direction.w);
 			if(ContainsParam(anim,"degreeToTarget"))
 			{				
+				degreeToTarget = (int)ProjectilePosTr.rotation.eulerAngles.z;
 				anim.SetInteger("degreeToTarget",(int)ProjectilePosTr.rotation.eulerAngles.z);
 			}
 

@@ -9,6 +9,7 @@ public class HeroAttack : MonoBehaviour
 
     private Hero hero;
 
+
     private bool ableAttack = true;
     void Awake()
     {
@@ -38,7 +39,8 @@ public class HeroAttack : MonoBehaviour
     public void attackEnemy()
     {
         //change hero animation to attacking animation
-        if (hero.anim != null)
+        
+		if (hero.anim != null)
             hero.anim.SetTrigger(hero.isAttackingHash);
         else
             Debug.Log(this.gameObject.name + " Doesn't has Atk animation");

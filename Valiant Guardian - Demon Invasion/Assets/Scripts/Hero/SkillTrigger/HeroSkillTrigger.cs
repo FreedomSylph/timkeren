@@ -115,7 +115,10 @@ public class HeroSkillTrigger : MonoBehaviour
         hero.anim.enabled = false;
 
     }
-
+	public Animator getAnimator()
+	{
+		return hero.anim;
+	}
 
     public void ResumeHeroAnimation()
     {

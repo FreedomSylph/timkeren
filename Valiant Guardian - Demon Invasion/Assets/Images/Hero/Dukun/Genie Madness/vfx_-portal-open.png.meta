@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bbe586a0a6540d249a34a4b81df1d0ae
-timeCreated: 1444485435
+timeCreated: 1446376630
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -11,6 +11,7 @@ TextureImporter:
     21300008: vfx_-portal-open_4
     21300010: vfx_-portal-open_5
     21300012: vfx_-portal-open_6
+    21300014: vfx_-portal-open_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -84,17 +85,17 @@ TextureImporter:
         width: 72
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: vfx_-portal-open_3
       rect:
         serializedVersion: 2
         x: 336
-        y: 28
-        width: 113
-        height: 74
+        y: 53
+        width: 24
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: vfx_-portal-open_4
       rect:
@@ -125,6 +126,16 @@ TextureImporter:
         height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vfx_-portal-open_7
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 29
+        width: 6
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

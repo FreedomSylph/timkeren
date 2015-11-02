@@ -6,6 +6,8 @@ public class SkillDukun : MonoBehaviour
 
     public GameObject normProjectiles;
     public GameObject ultiProjectiles;
+	
+	public GameObject Jin;
 
     private Hero hero;
 
@@ -14,9 +16,16 @@ public class SkillDukun : MonoBehaviour
         hero = GetComponent<Hero>();
     }
 
+	void Update()
+	{
+		Jin.transform.rotation = Quaternion.identity;
+	}
+
     public void normalSkill()
     {
-        StartCoroutine(bulletBurst());
+		//StartCoroutine(bulletBurst());  
+		hero.aimAtEnemy();
+		spawnNormProjectile();
     }
 
     IEnumerator bulletBurst()
@@ -37,6 +46,15 @@ public class SkillDukun : MonoBehaviour
         spawnUltiProjectile();
     }
 
+	/// <summary>
+	/// Spawns the fire projectile for the jin to do normal attack.
+	/// </summary>
+	public void spawnFireProjectile()
+	{
+		Jin.GetComponent<Animator>().SetTrigger("isAttacking");
+		//GetComponent<HeroAttack> ().spawnProjectile ();
+	}
+
     public void spawnUltiProjectile()
     {
         //spawning projectile for ultimate skill
@@ -48,6 +66,10 @@ public class SkillDukun : MonoBehaviour
     {
         //spawning projectile
         //called from animation
-        Instantiate(normProjectiles, hero.ProjectilePosTr.position, hero.ProjectilePosTr.rotation);
+		GameObject projectile =(GameObject)Instantiate(normProjectiles, new Vector3(0,0,10), Quaternion.identity);
+	
+		projectile.transform.parent = this.transform;
+		projectile.transform.position = new Vector3 (0, 0, 10);
+		gameObject.GetComponentInParent<HeroSkillTrigger> ().PauseHeroAnimation ();
     }
 }

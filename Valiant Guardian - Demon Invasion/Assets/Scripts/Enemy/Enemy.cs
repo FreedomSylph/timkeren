@@ -42,6 +42,7 @@ public class Enemy : MonoBehaviour
 
     private HealthBar healthBar;
 
+	public bool isBurn;
     //Indicator if enemy tapped and targeted
     public GameObject targetIndicator;
 
@@ -259,6 +260,30 @@ public class Enemy : MonoBehaviour
 		Invoke ("StopPoison",0.5f);
 	}
 
+	public void AttackedV4(float duration,float range)
+	{	
+		// if already burned, then return. don't stacked the burned
+		if (isBurn) 
+		{
+			return;
+		}
+		isBurn = true;
+		//set the duration and range from float to int
+		int tempA = Mathf.FloorToInt(duration / range);
+		for (int i = 0; i<tempA; i++) {
+			Invoke("fireDamage",(i+1)*range);
+		}
+		Invoke ("stopBurn", duration + 0.5f);
+
+	}
+	void stopBurn()
+	{
+			isBurn = false;
+	}
+	void fireDamage()
+	{
+		AttackedV2 ();
+	}
 	void StopPoison()
 	{
 		isPoisoned = false;
