@@ -9,6 +9,7 @@ public class SkillDukun : MonoBehaviour
 	
 	public GameObject Jin;
 
+	public GameObject spawnedProjectile;
     private Hero hero;
 
     void Awake()
@@ -55,14 +56,25 @@ public class SkillDukun : MonoBehaviour
 		//GetComponent<HeroAttack> ().spawnProjectile ();
 	}
 
+	public void jinTransform()
+	{
+		Jin.GetComponent<Animator> ().Play ("Jin-Transform-Anim");
+		//GetComponent<HeroAttack> ().spawnProjectile ();
+	}
+
     public void spawnUltiProjectile()
     {
         //spawning projectile for ultimate skill
         //called from animation
-        Instantiate(ultiProjectiles, hero.ProjectilePosTr.position, hero.ProjectilePosTr.rotation);
-    }
-
-    public void spawnNormProjectile()
+		GameObject projectile =(GameObject)Instantiate(ultiProjectiles, new Vector3(0,0,10), Quaternion.identity);
+		
+		projectile.transform.parent = this.transform;
+		projectile.transform.position = new Vector3 (0, 0, 10);
+		spawnedProjectile = projectile;
+		gameObject.GetComponentInParent<HeroSkillTrigger> ().PauseHeroAnimation ();
+	}
+	
+	public void spawnNormProjectile()
     {
         //spawning projectile
         //called from animation

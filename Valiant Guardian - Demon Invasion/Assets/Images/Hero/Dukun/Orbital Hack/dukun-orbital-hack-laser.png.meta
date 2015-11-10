@@ -1,9 +1,27 @@
 fileFormatVersion: 2
 guid: 8f8f9fc6849d60b4ba926a709103635d
-timeCreated: 1446212484
+timeCreated: 1447165079
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: dukun-orbital-hack-laser_5
+    21300002: dukun-orbital-hack-laser_8
+    21300004: dukun-orbital-hack-laser_24
+    21300006: dukun-orbital-hack-laser_25
+    21300008: dukun-orbital-hack-laser_26
+    21300010: dukun-orbital-hack-laser_29
+    21300012: dukun-orbital-hack-laser_31
+    21300014: dukun-orbital-hack-laser_32
+    21300016: dukun-orbital-hack-laser_33
+    21300018: dukun-orbital-hack-laser_37
+    21300020: dukun-orbital-hack-laser_51
+    21300022: dukun-orbital-hack-laser_56
+    21300024: dukun-orbital-hack-laser_74
+    21300026: dukun-orbital-hack-laser_77
+    21300028: dukun-orbital-hack-laser_100
+    21300030: dukun-orbital-hack-laser_101
+    21300032: dukun-orbital-hack-laser_106
+    21300034: dukun-orbital-hack-laser_108
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +48,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +66,187 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: dukun-orbital-hack-laser_5
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 1524
+        width: 133
+        height: 765
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_8
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 1573
+        width: 148
+        height: 714
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_24
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1557
+        width: 52
+        height: 732
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_25
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1538
+        width: 51
+        height: 751
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_26
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 1538
+        width: 58
+        height: 751
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_29
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 850
+        width: 130
+        height: 678
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_31
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 774
+        width: 153
+        height: 754
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_32
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 774
+        width: 249
+        height: 754
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_33
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 774
+        width: 312
+        height: 754
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_37
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 774
+        width: 244
+        height: 728
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_51
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 774
+        width: 223
+        height: 743
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_56
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 0
+        width: 635
+        height: 600
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_74
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 9
+        width: 394
+        height: 600
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_77
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 4
+        width: 419
+        height: 600
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_100
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 11
+        width: 254
+        height: 600
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_101
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 11
+        width: 95
+        height: 600
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_106
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 3
+        width: 669
+        height: 600
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dukun-orbital-hack-laser_108
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1667
+        width: 91
+        height: 622
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

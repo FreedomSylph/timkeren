@@ -276,6 +276,28 @@ public class Enemy : MonoBehaviour
 		Invoke ("stopBurn", duration + 0.5f);
 
 	}
+	public void AttackedV5()
+	{
+			attackX = Random.Range(1, 20);
+			defenseY = Random.Range(31, 80);
+			
+			int enemyDefense = GetEnemyDefenseStat();
+			//implement enemy defense formula without character level
+			enemyDefense = (int)(Mathf.Ceil(enemyDefense * 1.15f));
+			HPDecrease = HeroAttack.archerAtk - ((HeroAttack.archerAtk * attackX) / 100) - ((enemyDefense * defenseY) / 100);
+			//damage * 3
+			HPDecrease = HPDecrease * 3;
+			hitPoints -= HPDecrease;
+			//Spawn damage floater
+			SpawnDamageFloater(HPDecrease);
+			//set health bar
+			healthBar.OnAttacked(HPDecrease);
+			if (hitPoints <= 0)
+			{
+				Death();
+				disableBeingTargeted();
+			}
+	}
 	void stopBurn()
 	{
 			isBurn = false;

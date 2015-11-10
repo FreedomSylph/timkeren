@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normProjectiles: {fileID: 197718, guid: 216e7783cb37757448e421fd04259ea4, type: 2}
-  ultiProjectiles: {fileID: 180930, guid: 7dd20129556ba38429bf6fa82f6c6241, type: 2}
+  ultiProjectiles: {fileID: 159618, guid: 179cc29cd965a9649bebfb55060d665e, type: 2}
   Jin: {fileID: 176324}
 --- !u!114 &11481550
 MonoBehaviour:
@@ -525,6 +525,10 @@ Prefab:
       propertyPath: normProjectiles
       value: 
       objectReference: {fileID: 197718, guid: 216e7783cb37757448e421fd04259ea4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: ultiProjectiles
+      value: 
+      objectReference: {fileID: 159618, guid: 179cc29cd965a9649bebfb55060d665e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 194816}

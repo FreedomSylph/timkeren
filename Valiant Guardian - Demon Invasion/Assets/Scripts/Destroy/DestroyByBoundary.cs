@@ -7,11 +7,21 @@ public class DestroyByBoundary : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+		if (other.tag == "SkillProjectile") {
+
+		} 
+		else {
+			Destroy(other.gameObject);
+		}
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+		if (other.tag == "SkillProjectile") {
+			
+		} 
+		else {
+			Destroy(other.gameObject);
+		}
     }
 }

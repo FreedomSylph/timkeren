@@ -12,6 +12,7 @@ TagManager:
   - PlayerBase
   - Hero
   - Boundary
+  - SkillProjectile
   layers:
   - Default
   - TransparentFX
